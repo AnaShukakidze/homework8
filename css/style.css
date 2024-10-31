@@ -1,0 +1,282 @@
+.container {
+    width: min(100%, 1440px);
+    margin: auto;
+}
+
+/* header task 5*/
+header {
+    background-color: #47297B;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo {
+    width: 50px;
+    height: 50px;
+}
+
+.fa-shield-cat {
+    font-size: 50px;
+    color: #F5BD1F;
+    transition: all 1s;
+}
+
+.headerUl {
+    display: flex;
+    column-gap: 30px;
+}
+
+.headerLink {
+    font-size: 25px;
+    color: #F5BD1F;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 1s;
+}
+
+.fa-cat {
+    font-size: 30px;
+    color: #F5BD1F;
+    transition: all 1s;
+}
+
+.fa-shield-cat:hover, .fa-cat:hover, .headerLink:hover {
+    color: #FFE863;
+    text-shadow: 0 0 5px #FFD93D, 0 0 20px #FFD93D, 0 0 60px #FFD93D;
+}
+
+/* article task 3 */
+.article3{
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.article3 h2{
+    font-size: 140px;
+    letter-spacing: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #cc63f9;
+    text-shadow: 0 0 5px #cc63f9, 0 0 20px #cc63f9, 0 0 60px #cc63f9;
+    animation-name: textFlash;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* section task 6 */
+.section6{
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    border-radius: 30px;
+    border: solid 3px #F5BD1F;
+    padding: 3px;
+    background-color: white;
+}
+
+.section6 div{
+    height: 100%;
+    border-radius: 30px;
+    background-color: #47297B;
+    animation-name: loadingBar;
+    animation-duration: 7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* section task 2 */
+.section2{
+    width: 580px;
+    margin: 100px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.section2:hover{
+    box-shadow: 0px 0px 15px 20px #47297B;
+}
+
+.catContainer{
+    width: 560px;
+    overflow: hidden;
+}
+
+.catImage{
+    width: 100%;
+    transition: 1s;
+}
+
+.section2:hover .catImage{
+    transform: scale(1.5);
+    filter: grayscale(100%);
+    overflow: hidden;
+}
+
+.section2 h2{
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F5BD1F;
+    text-shadow: 2px 2px 3px #47297B;
+    margin: 30px 0;
+}
+
+.section2Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #47297B;
+}
+
+.section2Button{
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #47297B;
+    color: #FFE863;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.section2Button:active{
+    background-color: #cc63f9;
+}
+
+/* section task 1 */
+.section1{
+    width: 580px;
+    margin: auto;
+    padding: 100px;
+    background-color: #47297B;
+    border-radius: 30px;
+}
+.button1{
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 20px;
+    background-color: #47297B;
+    color: #FFD93D;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 3px #F5BD1F;
+    box-shadow: 5px 5px 5px black, inset 2px 2px 3px white;
+    cursor: pointer;
+}
+
+.button1:active{
+    box-shadow: inset 5px 5px 5px black, inset -2px -2px 3px white;
+    text-shadow: 1px 1px 3px #F5BD1F;
+}
+
+/* section task 4 */
+.section4{
+    width: 580px;
+    height: 580px;
+    position: relative;
+    margin: 100px auto;
+}
+
+.section4Content{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 1;
+    border-radius: 50%;
+    color: #47297B;
+    text-shadow: 3px 3px 3px#F5BD1F;
+}
+
+.section4Section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.section4Section:hover{
+    animation-play-state: paused;
+}
+
+.section4Section div{
+    width: 50%;
+    height: 100%;
+}
+
+.section4Child1{
+    background-color: #47297B;
+}
+
+.section4Container{
+    display: flex;
+    flex-direction: column;
+}
+
+.section4Container div{
+    width: 100%;
+    height: 50%;
+}
+
+.section4Child2{
+    background-color: #cc63f9;
+}
+
+.section4Child3{
+    background-color: #F5BD1F;
+}
+
+
+
+/* animations */
+
+@keyframes textFlash {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes loadingBar {
+    from {
+        width: 4%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
