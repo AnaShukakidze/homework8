@@ -34,6 +34,7 @@ header {
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: all 1s;
+    text-shadow: 2px 2px 2px black;
 }
 
 .fa-cat {
